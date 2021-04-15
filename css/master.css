@@ -16,11 +16,10 @@ a{
     list-style-type: none;
 }
 /** header**/
-.barra {
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center ;
-    padding-top: 3rem;
 }
 /** navegación**/
 
@@ -39,48 +38,33 @@ a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.opciones {
     list-style-type: none;
 }
-.opciones  a{
+.opciones li a{
     color:#fbbe28;
     font-family: 'Lato', sans-serif;
     font-size: 25px;
 }
-.menu .opciones a{
+.menu .opciones li a{
     text-decoration: none;
     color: white;
-    font-size: 1.8rem; /** 1.8REM = 18px**/
-    margin-right: 2rem;
+    font-size: 1.8rem;
+    justify-content: space-between;
 }
 .buscador{
-    padding: 10px;
+    padding-left: 700px;
     font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-}
-.buscador{
     float: right;
-    width: 25%;
-    padding: 20px;
-    background: black;
-    color:#fbbe28;
-    font-size: 17px;
-    border: 1px solid grey;
+    width: 100%;
+    background-color: black;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
-}
-.buscador{
-    background: #0b7dda;
-}
-.buscador{
     content: "";
     clear: both;
-    display: table;
+    display: flex;
+    align-items: center;
 }
+
 .footer{
     background-color: #fbbe28;
     position: fixed;
