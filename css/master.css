@@ -16,7 +16,7 @@ ul{
     list-style-type: none;
 }
 .logo{
-    width: 150px;
+    width: 200px;
 }
 .encabezado{
     background-color: black;
@@ -39,7 +39,37 @@ ul{
 .menu .opciones li a{
     text-decoration: none;
 }
+.buscador{
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+.buscador{
+    float: right;
+    width: 25%;
+    padding: 20px;
+    background: black;
+    color:#fbbe28;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+.buscador{
+    background: #0b7dda;
+}
+.buscador{
+    content: "";
+    clear: both;
+    display: table;
+}
 .footer{
     background-color: #fbbe28;
-    ;
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
 }
