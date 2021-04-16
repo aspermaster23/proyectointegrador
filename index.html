@@ -8,46 +8,89 @@
     <link rel="stylesheet" href="css/master.css">
     <title>Monkey Music</title>
 </head>
-<body class="body">
+<body>
     <main class="container">
         <header class="encabezado">
-            <div class="barra"> 
-                <figure class="logo">
-                    <img src="img/logo.png" alt="Logo Monkey Music">
-                </figure>
-                <nav class="navegación">
-            
-                        <a href="index.html">Home</a>
-                        <a href="#miplaylist.html">Mi Playlist</a>
-                        <a href="#generos.html">Géneros</a>  
-                </nav>  
-            
-                <!--Buscador-->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-                <form class="buscador" action="resultadobusqueda.html">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-            <!--Menu de navegacion-->
+            <figure class="logo">
+                <a href="index.html"> <img src="img/logo.png" alt="Logo Monkey Music"></a>
+            </figure>
+            <nav class="menu">
+                <ul class="opciones">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="miplaylist.html">Playlist</a></li>
+                    <li><a href="generos.html">Géneros</a></li>
+                </ul>
+                <h2 class="fraseheader">¡El lugar donde encontraras la mejor música!</h2>  
+            </nav>
+              
+            <!--Buscador-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <form class="buscador" action="resultadobusqueda.html">
+                <input type="text" placeholder="Buscar.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
         </header>
+<!--------------------LO ESTA HACIENDO VALEN------------------->
+        <h2 class="titulos">Canciones</h2>
         <section class="canciones">
-            <h2>Aca van 5 Canciones</h2>
+            <article class="cancion">
+                <img src="img/portadaplegarias.jpg" alt="Portada de plegarias">
+            </article>
+            <article class="cancion">
+                <img src="img/portadaanimal.jpg" alt="Portada de animal">
+            </article>
+            <article class="cancion">
+                <img src="img/amiladoportada.jpg" alt="Portada de a mi lado">
+            </article>
+            <article class="cancion">
+                <img src="img/portadaakapelinho.jpg" alt="Portada de akapelinho">
+            </article>
+            <article class="cancion">
+                <img src="img/portadacalifornicationjpg.jpg" alt="Portada de Californication">
+            </article>
         </section>
+        <h2 class="titulos">Discos/Álbumes</h2>
         <section class="discosalbumes">
-            <h2>Aca van 5 Discos/albumes</h2>
+            <article class="discoalbum">
+
+            </article>
+            <article class="discoalbum">
+
+            </article>
+            <article class="discoalbum">
+
+            </article>
+            <article class="discoalbum">
+
+            </article>
+            <article class="discoalbum">
+
+            </article>
         </section>
+        <h2 class="titulos">Artistas/Cantantes</h2>
         <section class="artistas">
-            <h2>Aca van 5 artistas</h2>
+            <article class="artista">
+
+            </article>
+            <article class="artista">
+
+            </article>
+            <article class="artista">
+
+            </article>
+            <article class="artista">
+
+            </article>
+            <article class="artista">
+
+            </article>
         </section>
-        <!--<footer class="footer">
-            <h2 class="creacion">Creado por: Gerónimo Galvez, Gonzalo Ruíz y Valentín Flores</h2>
-        </footer>-->
-     <footer class="footer">
+    <!----------------------------------------------------------->
+        
+        <footer class="footer">
             <h2>Aca empieza el footer</h2>
 
-     </footer>
+        </footer>
     </main>
 </body>
 </html>
