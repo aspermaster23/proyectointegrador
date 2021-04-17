@@ -63,12 +63,50 @@ ul{
 /*-------------------------FIN DE HEADER-----------------------*/
 
 /*---------------BOXES DE INICIO (NO TOCAR)--------------------*/
+.info{
+    font-size: 30px;
+    color: black;
+}
+.titulos{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
 .cancion{
     width: 15%;
 }
 .canciones{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cancion:hover{
+    width: 17%;
+    background-color: #fbbe28;
+}
+.discoalbum{
+    width: 15%;
+}
+.discosalbumes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.discoalbum:hover{
+    width: 17%;
+    background-color: #fbbe28;
+}
+.artista{
+    width: 15%;
+}
+.artistas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.artista:hover{
+    width: 17%;
+    background-color: #fbbe28;
 }
 /*-------------FIN DE BOXES DE INICIO--------------------------*/
 
