@@ -132,15 +132,53 @@ ul{
  .generos{
      padding: 6rem;
      width: 40rem; 
+     
  }
  .img {
      height: 20rem;
  }
  
-
+section-generos{
+    display: flex;
+    
+    justify-content: space-between;
+}
  
  .titulo-generos{
      margin-top: 3%;
+ }
+ .generos-article{
+     margin-bottom: 3rem;
+     
+ }
+ .generos-article:hover {
+    width: 29rem; 
+    background-color: #fbbe28;
+ }
+ .nombre-lista{
+     color: black;
+     display: flex;
+    justify-content: center;
+     
+   
+ }
+ 
+ /** detalles generos **/
+ .listas{
+     display: flexbox;
+     padding: 2rem;
+     
+ }
+ .listas a{
+     color:black;
+ }
+ .canciones-en-lista a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+ }
+ .section-detalle{
+     text-align: center;
+     margin: 2rem;
  }
 /*----------------------FIN DE GERO-----------------------------*/
 
