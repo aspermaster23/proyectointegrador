@@ -131,18 +131,14 @@ ul{
 
  .generos{
      padding: 6rem;
-     width: 40rem; 
-     
+     width: 30rem;  
  }
- .img {
+ 
+ img {
      height: 20rem;
  }
  
-section-generos{
-    display: flex;
-    
-    justify-content: space-between;
-}
+
  
  .titulo-generos{
      margin-top: 3%;
@@ -152,16 +148,21 @@ section-generos{
      
  }
  .generos-article:hover {
-    width: 29rem; 
+    width: 20rem; 
     background-color: #fbbe28;
  }
  .nombre-lista{
      color: black;
      display: flex;
     justify-content: center;
-     
-   
  }
+ .section-genero{
+    text-align: center;
+    margin: 2rem;
+    display: flexbox;
+    justify-content: center; /* ¿xq no funciona?*/
+}
+ 
  
  /** detalles generos **/
  .listas{
