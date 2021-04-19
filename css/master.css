@@ -1,3 +1,7 @@
+html{
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px**/
+    box-sizing: border-box;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -66,6 +70,7 @@ ul{
 .info{
     font-size: 30px;
     color: black;
+    line-height: normal;
 }
 .titulos{
     margin-top: 30px;
@@ -113,7 +118,7 @@ ul{
 /*------------------------FOOTER-------------------------------*/
 .footer{
     background-color: #fbbe28;
-    position: fixed;
+    position: bottom;
     left: 0%;
     bottom: 0%;
     width: 100%;
@@ -144,8 +149,7 @@ ul{
      margin-top: 3%;
  }
  .generos-article{
-     margin-bottom: 3rem;
-     
+     margin-bottom: 3rem; 
  }
  .generos-article:hover {
     width: 20rem; 
@@ -180,6 +184,7 @@ ul{
  .section-detalle{
      text-align: center;
      margin: 2rem;
+     
  }
 /*----------------------FIN DE GERO-----------------------------*/
 
