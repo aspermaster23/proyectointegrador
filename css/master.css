@@ -52,18 +52,6 @@ ul{
     display: flex;
     flex-wrap: wrap;
 }
-
-.buscador{
-    font-size: 17px;
-    height: 100%;
-    border-left: none; /* Prevent double borders*/ 
-    cursor: pointer;
-    content: "";
-    clear: both;
-    display: flex;
-    padding-left: 300px;
-    padding-top: 90px;
-}
 /*-------------------------FIN DE HEADER-----------------------*/
 
 /*---------------BOXES DE INICIO (NO TOCAR)--------------------*/
@@ -260,6 +248,15 @@ ul{
 /*----------------------FIN DE GERO-----------------------------*/
 
 /*---------------------GONZA-------------------------*/
+.titulobusqueda{ 
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.resultadoscanciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;}
 
 /*---------------------FIN DE GONZA--------------------------------*/
 
