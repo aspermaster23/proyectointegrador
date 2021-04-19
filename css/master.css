@@ -73,45 +73,91 @@ ul{
     line-height: normal;
 }
 .titulos{
+    font-size: 40px;
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    background-color: #fbbe28;
+    padding: 20px 0 20px 0
+}
+
+.cancion{
+    -webkit-transition:all .7s ease; /* Safari y Chrome */
+    -moz-transition:all .7s ease; /* Firefox */
+    -o-transition:all .7s ease; /* IE 9 */
+    -ms-transition:all .7s ease; /* Opera */
+    width:100%;
+}
+.cancion:hover{
+    -webkit-transform:scale(1.07);
+    -moz-transform:scale(1.07);
+    -ms-transform:scale(1.07);
+    -o-transform:scale(1.07);
+    transform:scale(1.07);
+    background-color: #fbbe28;
 }
 .cancion{
-    width: 15%;
+    width:15%;
+    overflow:hidden;
 }
+
 .canciones{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.cancion:hover{
-    width: 17%;
+/*****************************************/
+
+.discoalbum{
+    -webkit-transition:all .7s ease; /* Safari y Chrome */
+    -moz-transition:all .7s ease; /* Firefox */
+    -o-transition:all .7s ease; /* IE 9 */
+    -ms-transition:all .7s ease; /* Opera */
+    width:100%;
+}
+.discoalbum:hover{
+    -webkit-transform:scale(1.07);
+    -moz-transform:scale(1.07);
+    -ms-transform:scale(1.07);
+    -o-transform:scale(1.07);
+    transform:scale(1.07);
     background-color: #fbbe28;
 }
 .discoalbum{
-    width: 15%;
+    width:15%;
+    overflow:hidden;
 }
+
 .discosalbumes{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.discoalbum:hover{
-    width: 17%;
+/*********************************************/
+.artista{
+    -webkit-transition:all .7s ease; /* Safari y Chrome */
+    -moz-transition:all .7s ease; /* Firefox */
+    -o-transition:all .7s ease; /* IE 9 */
+    -ms-transition:all .7s ease; /* Opera */
+    width:100%;
+}
+.artista:hover{
+    -webkit-transform:scale(1.07);
+    -moz-transform:scale(1.07);
+    -ms-transform:scale(1.07);
+    -o-transform:scale(1.07);
+    transform:scale(1.07);
     background-color: #fbbe28;
 }
 .artista{
-    width: 15%;
+    width:15%;
+    overflow:hidden;
 }
+
 .artistas{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 70px;
-}
-.artista:hover{
-    width: 17%;
-    background-color: #fbbe28;
+    margin-bottom: 50px;
 }
 /*-------------FIN DE BOXES DE INICIO--------------------------*/
 
@@ -125,7 +171,32 @@ ul{
 }
 /*---------------------FIN DE FOOTER----------------------------*/
 
+
+
 /*---------------VALEN-----------------------------*/
+/*detalles de canciones, artistas, albumes*/
+.imgdetalles{
+    width: 20%;
+    height: 5%;
+}
+.infodetallescancion{
+    display: flexbox;
+    align-items: center;
+}
+.infodetalles{
+    margin: 10px 0 10px 0;
+    font-size: 30px;
+}
+.video{
+    position: relative;
+    left: 600px;
+    bottom: 400px;
+    margin-bottom: -400px;
+}
+
+
+
+
 
 
 /*--------------------FIN DE VALEN-----------------------------*/
