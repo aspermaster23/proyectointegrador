@@ -1,6 +1,5 @@
 html{
-    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px**/
-    box-sizing: border-box;
+    font-size: 62.5%;/** Reset para REMS - 62.5% = 10px de 16px**/
 }
 *{
     box-sizing: border-box;
@@ -148,19 +147,6 @@ ul{
     margin-bottom: 50px;
 }
 /*-------------FIN DE BOXES DE INICIO--------------------------*/
-
-/*------------------------FOOTER-------------------------------*/
-.footer{
-    background-color: #fbbe28;
-    position: bottom;
-    left: 0%;
-    bottom: 0%;
-    width: 100%;
-}
-/*---------------------FIN DE FOOTER----------------------------*/
-
-
-
 /*---------------VALEN-----------------------------*/
 /*detalles de canciones, artistas, albumes*/
 .imgdetalles{
@@ -248,15 +234,70 @@ ul{
 /*----------------------FIN DE GERO-----------------------------*/
 
 /*---------------------GONZA-------------------------*/
-.titulobusqueda{ 
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
+form.buscador input[type=text] {
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid black;
+    float: left;
+    width: 80%;
+    background: #fbbe28;
+  }
+form.buscador button{
+    background-color: #fbbe28;
+    width: 15%;
+    padding: 5px;
+    border-color: #fbbe28;
+
 }
-.resultadoscanciones{
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.titulobusqueda{
+    margin-top: 2%;
+    text-align: center;
+}
+.subtitulosbusqueda{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 0
+}
+.seccionesresultados{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;}
-
+    justify-content: space-between;
+}
+.footer{
+    background-color: black;
+    position: bottom;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+}
+.textosfooter{
+    color: #fbbe28;
+}
+.fundadores{
+    border-radius: 50%;
+    width: 300px;
+    height: 200px;
+}
+.seccionfundadores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.imgctexto{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centrado{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
 /*---------------------FIN DE GONZA--------------------------------*/
-
