@@ -229,7 +229,6 @@ ul{
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
-     margin: 2rem;
      align-items: center; 
  }
  .section-detalle h2{
