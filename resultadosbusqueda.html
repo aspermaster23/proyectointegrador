@@ -1,47 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Krub&family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <link rel="stylesheet" href="css/master.css">
-    <title>Resultado de busqueda</title>
-</head>
-<body>
-    <main class="container">
-        <header class="encabezado">
-            <figure class="logo">
-                <a href="index.html"> <img src="img/logo.png" alt="Logo Monkey Music"></a>
-            </figure>
-            <nav class="menu">
-                <ul class="opciones">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="miplaylist.html">Playlist</a></li>
-                    <li><a href="generos.html">Géneros</a></li>
-                    <!--Buscador hecho por gonza-->
-                    <li><a href="resultadosbusqueda.html"><ion-icon name="search-circle-sharp"></ion-icon></a> </li>
-                </ul>
-                <h2 class="fraseheader">¡El lugar donde encontraras la mejor música!</h2>  
-            </nav>
-        </header>
-    <h1 class="titulobusqueda">Lo mas buscado</h1>
-    <h2 class="titulos">Canciones</h2>
-    <section class="resultadoscanciones">
-        <article class="cancion">
-            <a href="cancionplegarias.html" target="_blank"><img src="img/portadaplegarias.jpg" alt="Portada de plegarias"></a>
-            <a href="cancionplegarias.html" target="_blank"><h2 class="info">Plegarias - Nicki Nicole</h2></a>
-        </article>
-        <article class="cancion">
-            <a href="cancionanimal.html" target="_blank"><img src="img/portadaanimal.jpg" alt="Portada de animal"></a>
-            <a href="cancionanimal.html" target="_blank"><h2 class="info">Animal - Maria Becerra, Cazzu</h2></a>
-        </article>
-        <article class="cancion">
-            <a href="cancionamilado.html" target="_blank"><img src="img/amiladoportada.jpg" alt="Portada de a mi lado"></a>
-            <a href="cancionamilado.html" target="_blank"><h2 class="info">A mi lado - DANI</h2></a>
-        </article>
-
-    </section>
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Krub&family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <link rel="stylesheet" href="css/master.css">
+        <title>Resultados de buqeuda</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    </head>
+    <body>
+        <main class="container">
+                <header class="encabezado">
+                    <figure class="logo">
+                        <a href="index.html"> <img src="img/logo.png" alt="Logo Monkey Music"></a>
+                    </figure>
+                    <nav class="menu">
+                        <ul class="opciones">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="miplaylist.html">Playlist</a></li>
+                            <li><a href="generos.html">Géneros</a></li>
+                            <!--Buscador hecho por gonchy-->
+                            <li>
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                <form class="buscador" action="resultadosbusqueda.html">
+                                  <input type="text" placeholder="Buscar.." name="search">
+                                  <button type="submit"><i class="fa fa-search"></i></button>
+                                </form> 
+                            </li>
+                        </ul>
+                        <h2 class="fraseheader">¡El lugar donde encontraras la mejor música!</h2>  
+                    </nav>
+                </header>
+                <h1 class="titulogonchy">LO MAS BUSCADO</h1>
+                    <h2 class="subtitulosbusqueda">Canciones</h2>
+                <section class="seccionesresultados">
+                    <article class="cancion">
+                        <a href="cancionplegarias.html" target="_blank"><img src="img/portadaplegarias.jpg" alt="Portada de plegarias"></a>
+                        <a href="cancionplegarias.html" target="_blank"><h2 class="info">Plegarias - Nicki Nicole</h2></a>
+                    </article>
+                    <article class="cancion">
+                        <a href="cancionanimal.html" target="_blank"><img src="img/portadaanimal.jpg" alt="Portada de animal"></a>
+                        <a href="cancionanimal.html" target="_blank"><h2 class="info">Animal - Maria Becerra, Cazzu</h2></a>
+                    </article>
+                    <article class="cancion">
+                        <a href="cancionamilado.html" target="_blank"><img src="img/amiladoportada.jpg" alt="Portada de a mi lado"></a>
+                        <a href="cancionamilado.html" target="_blank"><h2 class="info">A mi lado - DANI</h2></a>
+                    </article>
+                </section>
+            <h2 class="subtitulosbusqueda">Discos/Álbumes</h2>
+            <section class="seccionesresultados">
+                <article class="discoalbum">
+                    <a href="albumrecuerdos.html" target="_blank"><img src="img/albumrecuerdos.jpg" alt="Album Recuerdos"></a>
+                    <a href="albumrecuerdos.html" target="_blank"><h2 class="info">Recuerdos</h2></a>
+                </article>
+                <article class="discoalbum">
+                    <a href="albumcinema.html" target="_blank"><img src="img/albumcinema.jpg" alt="Album Cinema"></a>
+                    <a href="albumcinema.html" target="_blank"><h2 class="info">Cinema</h2></a>
+                </article>
+                <article class="discoalbum">
+                    <a href="albumssj.html" target="_blank"><img src="img/albumssj.jpg" alt="Album Super Sangre Joven"></a>
+                    <a href="albumssj.html" target="_blank"><h2 class="info">Super Sangre Joven</h2></a>
+                </article>
+            </section>
+            <h2 class="subtitulosbusqueda">Artistas/Cantantes</h2>
+            <section class="seccionesresultados">
+                <article class="artista">
+                    <a href="artistadrake.html" target="_blank"><img src="img/drake.jpg" alt="Drake"></a>
+                    <a href="artistadrake.html" target="_blank"><h2 class="info">Drake</h2></a>
+                </article>
+                <article class="artista">
+                    <a href="artistanickinicole.html" target="_blank"><img src="img/nickinicole.jpg" alt="Nicki Nicole"></a>
+                    <a href="artistanickinicole.html" target="_blank"><h2 class="info">Nicki Nicole</h2></a>
+                </article>
+                <article class="artista">
+                    <a href="artistaduki.html" target="_blank"><img src="img/duki.jpg" alt="Duki"></a>
+                    <a href="artistaduki.html" target="_blank"><h2 class="info">Duki</h2></a>
+                </article>
+            </section>
+            <footer class="footer">
+             <h2 class="textosfooter">Monkey music</h2>
+                <p class="textosfooter">Monkey music es es un servicio de música en streaming que te da acceso a millones de canciones y otros contenidos de artistas de todo el mundo.</p>
+             <h2 class="textosfooter">Fundadores</h2>
+                    <section class="seccionfundadores">
+                        <div class="imgctexto">
+                            <img class="fundadores" src="img/fundadores2.jpg" alt="fundadores2">
+                            <div class="centrado">Gonzalo Ruiz</div>
+                        </div>
+                        <div class="imgctexto">
+                            <img class= fundadores src="img/fundadores3.jpg" alt="fundadores3">
+                            <div class="centrado">Valentin Flores</div>
+                        </div>
+                        <div class="imgctexto">
+                            <img class="fundadores" src="img/fundadores.jpg" alt="fundadores">
+                            <div class="centrado">Geronimo Galvez</div>
+                        </div>    
+                    </section>  
+                    <p class="textosfooter">Todos los derechos reservados &copy;</p>
+             </footer>
+        </main>
+    </body>
+    </html>
