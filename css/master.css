@@ -1,6 +1,6 @@
 html{
     font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px**/
-    box-sizing: border-box;
+   
 }
 *{
     box-sizing: border-box;
@@ -12,6 +12,7 @@ body{
     font-size: 1.6rem ;
     font-family: 'Lato', sans-serif;
     line-height: 2rem;
+    
 }
 
 img{
@@ -220,10 +221,7 @@ ul{
     justify-content: center;
  }
  .section-genero{
-    text-align: center;
     margin: 2rem;
-    display: flexbox;
-    justify-content: center; /* ¿xq no funciona?*/
 }
  
  
@@ -242,8 +240,15 @@ ul{
  }
  .section-detalle{
      text-align: center;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
      margin: 2rem;
-     
+     align-items: center; 
+ }
+ .section-detalle h2{
+     width: 100%;
+     background-color: #fbbe28;
  }
 /*----------------------FIN DE GERO-----------------------------*/
 
