@@ -277,7 +277,7 @@ form.example::after {
     background-color: black;
     position: bottom;
     left: 0%;
-    bottom: 0%;
+    bottom: 5%;
     width: 100%;
 }
 .textosfooter{
@@ -303,5 +303,10 @@ form.example::after {
     top: 70%;
     left: 30%;
     transform: translate(-50%, -50%);
+}
+.cancionesplaylist{
+    width:15%;
+    overflow:hidden;
+    margin: 20px;
 }
 /*---------------------FIN DE GONZA--------------------------------*/
