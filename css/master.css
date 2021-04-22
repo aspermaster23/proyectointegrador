@@ -69,23 +69,15 @@ ul{
 }
 
 .cancion{
-    -webkit-transition:all .7s ease; /* Safari y Chrome */
-    -moz-transition:all .7s ease; /* Firefox */
-    -o-transition:all .7s ease; /* IE 9 */
-    -ms-transition:all .7s ease; /* Opera */
+    transition:all .7s ease;
     width:100%;
 }
 .cancion:hover{
-    -webkit-transform:scale(1.07);
-    -moz-transform:scale(1.07);
-    -ms-transform:scale(1.07);
-    -o-transform:scale(1.07);
     transform:scale(1.07);
     background-color: #fbbe28;
 }
 .cancion{
     width:15%;
-    overflow:hidden;
 }
 
 .canciones{
@@ -96,23 +88,15 @@ ul{
 /*****************************************/
 
 .discoalbum{
-    -webkit-transition:all .7s ease; /* Safari y Chrome */
-    -moz-transition:all .7s ease; /* Firefox */
-    -o-transition:all .7s ease; /* IE 9 */
-    -ms-transition:all .7s ease; /* Opera */
+    transition: all .7s ease;
     width:100%;
 }
 .discoalbum:hover{
-    -webkit-transform:scale(1.07);
-    -moz-transform:scale(1.07);
-    -ms-transform:scale(1.07);
-    -o-transform:scale(1.07);
     transform:scale(1.07);
     background-color: #fbbe28;
 }
 .discoalbum{
     width:15%;
-    overflow:hidden;
 }
 
 .discosalbumes{
@@ -122,23 +106,15 @@ ul{
 }
 /*********************************************/
 .artista{
-    -webkit-transition:all .7s ease; /* Safari y Chrome */
-    -moz-transition:all .7s ease; /* Firefox */
-    -o-transition:all .7s ease; /* IE 9 */
-    -ms-transition:all .7s ease; /* Opera */
     width:100%;
+    transition: all .7s ease;
 }
 .artista:hover{
-    -webkit-transform:scale(1.07);
-    -moz-transform:scale(1.07);
-    -ms-transform:scale(1.07);
-    -o-transform:scale(1.07);
     transform:scale(1.07);
     background-color: #fbbe28;
 }
 .artista{
     width:15%;
-    overflow:hidden;
 }
 
 .artistas{
@@ -149,7 +125,7 @@ ul{
 }
 /*-------------FIN DE BOXES DE INICIO--------------------------*/
 /*---------------VALEN-----------------------------*/
-/*detalles de canciones, artistas, albumes*/
+/*detalles de canciones*/
 .imgdetalles{
     width: 20%;
     height: 5%;
@@ -161,6 +137,14 @@ ul{
 .infodetalles{
     margin: 10px 0 10px 0;
     font-size: 30px;
+    color: black;
+}
+.infodetalles a{
+    color: black;
+}
+.infodetalles a:hover{
+    text-decoration: underline;
+    color: #fbbe28;
 }
 .video{
     position: relative;
@@ -168,8 +152,25 @@ ul{
     bottom: 400px;
     margin-bottom: -400px;
 }
-
-
+/*detalles de albumes*/
+.detallesalbum{
+    display: flex;
+    align-items: center;
+}
+.listacanciones{
+    text-decoration: underline;
+    background-color: #fbbe28;
+}
+.listadocanciones a{
+    color: black;
+}
+.listadocanciones a:hover{
+    color: #fbbe28;
+}
+/*detalles artistas*/
+.detallesartista{
+    display: flex;
+}
 
 
 
