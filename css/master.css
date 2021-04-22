@@ -145,12 +145,7 @@ ul{
     text-decoration: underline;
     color: #fbbe28;
 }
-.video{
-    position: relative;
-    left: 600px;
-    bottom: 400px;
-    margin-bottom: -400px;
-}
+
 /*detalles de albumes*/
 .detallesalbum{
     display: flex;
@@ -325,7 +320,7 @@ form.example::after {
         width: 50%;
         margin: 0;
     }
-    /**Boton buscador header mobile**/
+    /**Header**/
     form.buscador input[type=text] {
         padding: 5px;
         font-size: 15px;
@@ -334,7 +329,9 @@ form.example::after {
         width: 60%;
         background: #fbbe28;
     }
-    /**Termina boton buscador header mobile**/
+    .logo{
+        margin-left: 22%;
+    }
     form.buscador button{
         background-color: #fbbe28;
         width: 40%;
@@ -344,8 +341,6 @@ form.example::after {
     .imgctexto{
         width: 100%;
     }
-    /**Footer termina aca para mobile**/
-
     /**Pagina home mobile**/
     .artistas{
         display: flex;
@@ -375,5 +370,22 @@ form.example::after {
     /**Detalle de las canciones**/
     .imgdetalles{
         width: 90%;
+        margin-left: 5%;
     }
+    .video{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    /**Detalle de los albumes**/
+    .detallesalbum{
+        flex-direction: column;
+        margin-right: 5%;
+    }
+    /**Detalles artistas**/
+    .detallesartista{
+        flex-direction: column;
+        margin-right: 5%;
+    }
+   
 }
