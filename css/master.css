@@ -221,6 +221,9 @@ ul{
  .listas a{
      color:black;
  }
+ .canciones-en-lista{
+     padding-bottom: 0.73rem;
+ }
  .canciones-en-lista a:hover{
     font-weight: bold;
     text-decoration: underline;
@@ -236,6 +239,21 @@ ul{
      width: 100%;
      background-color: #fbbe28;
  }
+ .section-detalle1{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+     }
+.canciones-en-lista-rock{
+         padding-bottom: 8.9rem;
+     }
+.canciones-en-lista-rock a:hover{
+        font-weight: bold;
+        text-decoration: underline;
+     }
 /*----------------------FIN DE GERO-----------------------------*/
 
 /*---------------------GONZA-------------------------*/
