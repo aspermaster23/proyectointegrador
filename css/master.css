@@ -11,7 +11,6 @@ body{
     font-size: 1.6rem ;
     font-family: 'Lato', sans-serif;
     line-height: 2rem;
-    
 }
 img{
     width: 100%;
@@ -23,7 +22,6 @@ ul{
     list-style-type: none;
 }
 /*---------------HEADER---------------------*/
-
 /*Menu*/
 .menu{
     display: flex;
@@ -42,7 +40,6 @@ ul{
     color: #fbbe28;
     text-decoration: underline;
 }
-
 .logo{
     width: 200px;
 }
@@ -52,7 +49,6 @@ ul{
     flex-wrap: wrap;
 }
 /*-------------------------FIN DE HEADER-----------------------*/
-
 /*---------------BOXES DE INICIO (NO TOCAR)--------------------*/
 .info{
     font-size: 30px;
@@ -78,14 +74,12 @@ ul{
 .cancion{
     width:15%;
 }
-
 .canciones{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 /*****************************************/
-
 .discoalbum{
     transition: all .7s ease;
     width:100%;
@@ -145,7 +139,6 @@ ul{
     text-decoration: underline;
     color: #fbbe28;
 }
-
 /*detalles de albumes*/
 .detallesalbum{
     display: flex;
@@ -166,22 +159,15 @@ ul{
     display: flex;
 }
 /*--------------------FIN DE VALEN-----------------------------*/
-
 /*-----------------------GERO-------------------------*/
  /** generos.html**/
- 
-
  .generos{
      padding: 6rem;
      width: 30rem;  
  }
- 
  img {
      height: 20rem;
  }
- 
-
- 
  .titulo-generos{
      margin-top: 3%;
  }
@@ -200,13 +186,10 @@ ul{
  .section-genero{
     margin: 2rem;
 }
- 
- 
  /** detalles generos **/
  .listas{
      display: flexbox;
      padding: 2rem;
-     
  }
  .listas a{
      color:black;
@@ -227,7 +210,6 @@ ul{
      background-color: #fbbe28;
  }
 /*----------------------FIN DE GERO-----------------------------*/
-
 /*---------------------GONZA-------------------------*/
 form.buscador input[type=text] {
     padding: 5px;
@@ -242,7 +224,6 @@ form.buscador button{
     width: 15%;
     padding: 5px;
     border-color: #fbbe28;
-
 }
 form.example::after {
     content: "";
@@ -301,14 +282,15 @@ form.example::after {
     margin: 20px;
 }
 /*---------------------FIN DE GONZA--------------------------------*/
-/* On screens that are 992px or less, set the background color to blue */
 @media (min-width: 320px) and (max-width: 480px) {
     body {
       background-color: #fbbe28;
     }
+    /**textos de las imagenes**/
     .info{
         font-size: 15px;
     }
+    /**Pagina resultados**/
     .subtitulosbusqueda{
         font-size: 30px;
     }
@@ -376,7 +358,6 @@ form.example::after {
         width: 90%;
         margin-left: 5%;
     }
-
     /**Detalle de los albumes**/
     .detallesalbum{
         flex-direction: column;
@@ -387,5 +368,4 @@ form.example::after {
         flex-direction: column;
         margin-right: 5%;
     }
-   
 }
