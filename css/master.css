@@ -301,7 +301,6 @@ form.example::after {
     margin: 20px;
 }
 /*---------------------FIN DE GONZA--------------------------------*/
-/* On screens that are 992px or less, set the background color to blue */
 @media (min-width: 320px) and (max-width: 480px) {
     body {
       background-color: #fbbe28;
