@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monkey Music</title>
     <link rel="stylesheet" href="css/master.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
     <main class="container">
@@ -18,16 +19,16 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="miplaylist.html">Playlist</a></li>
                     <li><a href="generos.html">Géneros</a></li>
+                    <li>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <form class="buscador" action="resultadosbusqueda.html">
+                          <input type="text" placeholder="Buscar.." name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form> 
+                    </li>
                 </ul>
                 <h2 class="fraseheader">¡El lugar donde encontraras la mejor música!</h2>  
             </nav>
-              
-            <!--Buscador-->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <form class="buscador" action="resultadobusqueda.html">
-                <input type="text" placeholder="Buscar.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
         </header>
 
         <section class="infodetallescancion">
@@ -36,9 +37,9 @@
                 <h2 class="infodetalles">Artista: Akapellah</h2>
                 <h2 class="infodetalles">Album: -</h2>
             </article>
+            <iframe width="760" height="415" src="https://www.youtube.com/embed/RKMWnrfsRzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
             <img src="img/portadaakapelinho.jpg" alt="Portada Akapelinho" class="imgdetalles">
-        </section>
-        <iframe width="760" height="415" src="https://www.youtube.com/embed/RKMWnrfsRzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+        </section>        
         <footer class="footer">
             <h2 class="textosfooter">Monkey music</h2>
                <p class="textosfooter">Monkey music es es un servicio de música en streaming que te da acceso a millones de canciones y otros contenidos de artistas de todo el mundo.</p>
@@ -58,7 +59,7 @@
                        </div>    
                    </section>  
                    <p class="textosfooter">Todos los derechos reservados &copy;</p>
-            </footer>
+        </footer>
     </main>
 </body>
 </html>

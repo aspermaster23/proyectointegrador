@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monkey Music</title>
     <link rel="stylesheet" href="css/master.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
     <main class="container">
@@ -18,16 +19,16 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="miplaylist.html">Playlist</a></li>
                     <li><a href="generos.html">Géneros</a></li>
+                    <li>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <form class="buscador" action="resultadosbusqueda.html">
+                          <input type="text" placeholder="Buscar.." name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form> 
+                    </li>
                 </ul>
                 <h2 class="fraseheader">¡El lugar donde encontraras la mejor música!</h2>  
             </nav>
-              
-            <!--Buscador-->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <form class="buscador" action="resultadobusqueda.html">
-                <input type="text" placeholder="Buscar.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
         </header>
 
         <section class="infodetallesalbum">
@@ -71,7 +72,7 @@
                        </div>    
                    </section>  
                    <p class="textosfooter">Todos los derechos reservados &copy;</p>
-            </footer>
+        </footer>
     </main>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monkey Music</title>
     <link rel="stylesheet" href="css/master.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
     <main class="container">
@@ -18,23 +19,23 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="miplaylist.html">Playlist</a></li>
                     <li><a href="generos.html">Géneros</a></li>
+                    <li>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <form class="buscador" action="resultadosbusqueda.html">
+                          <input type="text" placeholder="Buscar.." name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form> 
+                    </li>
                 </ul>
                 <h2 class="fraseheader">¡El lugar donde encontraras la mejor música!</h2>  
             </nav>
-              
-            <!--Buscador-->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <form class="buscador" action="resultadobusqueda.html">
-                <input type="text" placeholder="Buscar.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
         </header>
 
         <section class="infodetallesalbum">
             <h2 class="infodetalles">Fecha de Publicacion: 8 de diciembre de 1999</h2>
             <h2 class="infodetalles">Album: A 2000</h2>
             <h2 class="infodetalles">Artista:<a href="artistarodrigobueno.html" target="_blank">Rodrigo Bueno</a></h2>
-            <h2 class="infodetalles">Genero:<a href="#" target="_blank">Cuarteto</a></h2>
+            <h2 class="infodetalles">Genero:<a href="detalle-cuarteto.html" target="_blank">Cuarteto</a></h2>
             <article class="detallesalbum">
                 <img src="img/albumadosmil.jpg" alt="Disco A 2000" class="imgdetalles">
                 <ul class="listadocanciones">
@@ -68,12 +69,12 @@
                            <div class="centrado">Valentin Flores</div>
                        </div>
                        <div class="imgctexto">
-                           <img class="fundadores" src="img/WhatsApp Image 2021-04-22 at 22.57.36.jpeg" alt="fundadores">
+                           <img class="fundadores" src="img/fundadores.jpg" alt="fundadores">
                            <div class="centrado">Geronimo Galvez</div>
                        </div>    
                    </section>  
                    <p class="textosfooter">Todos los derechos reservados &copy;</p>
-            </footer>
+        </footer>
     </main>
 </body>
 </html>
