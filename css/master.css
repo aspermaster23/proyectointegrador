@@ -124,7 +124,7 @@ ul{
     height: 5%;
 }
 .infodetallescancion{
-    display: flexbox;
+    /*display: flexbox;*/
     align-items: center;
 }
 .infodetalles{
