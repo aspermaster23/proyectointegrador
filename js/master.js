@@ -10,7 +10,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks
 .then(dataCancion =>{
     //console.log(dataCancion);
     for(let i =0;i<5;i++){
-        canciones.innerHTML += `<article class="cancion"><a href="detallecancion.html?${dataCancion.id}"> <img src=${dataCancion.data[i].album.cover_big}> </a> <h2>${dataCancion.data[i].title}</h2> </article>`
+        canciones.innerHTML += `<article class="cancion"><a href="detallecancion.html?id=${dataCancion.data[i].id}"> <img src=${dataCancion.data[i].album.cover_big}> </a> <h2>${dataCancion.data[i].title}</h2> </article>`
     }    
 })
 .catch(error=>console.log(error))
@@ -24,7 +24,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums
 .then(dataAlbum =>{
     //console.log(dataAlbum);
     for(let i =0;i<5;i++){
-        albumes.innerHTML += `<article class="discoalbum"><a href="detallealbum.html?${dataAlbum.id}"> <img src=${dataAlbum.data[i].cover_big}> </a> <h2>${dataAlbum.data[i].title}</h2> </article>`
+        albumes.innerHTML += `<article class="discoalbum"><a href="detallealbum.html?id=${dataAlbum.data[i].id}"> <img src=${dataAlbum.data[i].cover_big}> </a> <h2>${dataAlbum.data[i].title}</h2> </article>`
     }    
 })
 .catch(error=>console.log(error))
@@ -38,7 +38,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artist
 .then(dataArtista =>{
     //console.log(dataArtista);
     for(let i =0;i<5;i++){
-        artistas.innerHTML += `<article class="artista"><a href="detalleartista.html?${dataArtista.id}"> <img src=${dataArtista.data[i].picture_big}> </a> <h2>${dataArtista.data[i].name}</h2> </article>`
+        artistas.innerHTML += `<article class="artista"><a href="detalleartista.html?id=${dataArtista.data[i].id}"> <img src=${dataArtista.data[i].picture_big}> </a> <h2>${dataArtista.data[i].name}</h2> </article>`
     }    
 })
 .catch(error=>console.log(error))
