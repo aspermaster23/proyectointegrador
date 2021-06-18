@@ -1,6 +1,7 @@
 let objetoId = new URLSearchParams(location.search);
 let id =  objetoId.get('id');
 console.log(id);
+
 //Detalles Cancion
 let infodetallescancion=document.querySelector(".infodetallescancion");
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
@@ -10,12 +11,13 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
 .then(dataDetallesc =>{
     console.log(dataDetallesc);
 
-    infodetallescancion.innerHTML += `<article class="infodetalles"> </a> <h2>Cancion: ${dataDetallesc.title}</h2></article> <article class="infodetalles">  <h2>Artista: ${dataDetallesc.artist.name}</h2> </article> <article class="infodetalles"> <h2>Album: ${dataDetallesc.album.title}</h2> </article> <article class="contenido"><img src=${dataDetallesc.album.cover_big} alt=${dataDetallesc.album.title} class="imgdetalles"> <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}?tracklist=false" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write" class="video"></iframe> </article> `
+    infodetallescancion.innerHTML += `<article class="infodetalles"> </a> <h2>Cancion: ${dataDetallesc.title}</h2></article> <article class="infodetalles">  <h2>Artista: ${dataDetallesc.artist.name}</h2> </article> <article class="infodetalles"> <h2>Album: ${dataDetallesc.album.title}</h2> </article> <article class="contenido"><img src=${dataDetallesc.album.cover_big} alt=${dataDetallesc.album.title} class="imgdetalles"> <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}?tracklist=false" width="100%" height="260px" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write" class="video"></iframe> </article> `
 })
 .catch(error => console.log(error));
 
 //Detalle Album
 let infodetallesalbum=document.querySelector(".infodetallesalbum");
+let listadocanciones=document.querySelector(".listadocanciones")
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
 .then(respuesta =>{
     return respuesta.json()
@@ -28,7 +30,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
         infodetallesalbum.innerHTML += `<li><h2>${dataDetallesa.tracks.data[i].title}</h2></li>` 
     }
 
-    infodetallesalbum.innerHTML += `</ul> `
+    infodetallesalbum.innerHTML += `</ul> </article>`
 })
 .catch(error => console.log(error));
 

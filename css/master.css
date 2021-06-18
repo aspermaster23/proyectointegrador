@@ -121,7 +121,7 @@ ul{
 /*detalles de canciones*/
 .imgdetalles{
     width: 17%;
-    height: 5%;
+    height: 18%;
 }
 .infodetallescancion{
     /*display: flexbox;*/
@@ -151,14 +151,17 @@ ul{
     text-decoration: underline;
     background-color: #fbbe28;
 }
-.listadocanciones a{
+
+.listadocanciones ul li{
     color: black;
+    list-style: none;
 }
 .listadocanciones a:hover{
     color: #fbbe28;
 }
-.content{
+.contenido{
     display: flex;
+    margin-bottom: 20px;
 }
 /*detalles artistas*/
 .detallesartista{
