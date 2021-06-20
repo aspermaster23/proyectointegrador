@@ -229,7 +229,7 @@ ul{
      }
 /*----------------------FIN DE GERO-----------------------------*/
 /*---------------------GONZA-------------------------*/
-form.buscador input[type=text] {
+form.buscador input[type=search] {
     padding: 5px;
     font-size: 15px;
     border: 1px solid black;
@@ -299,6 +299,7 @@ form.example::after {
     overflow:hidden;
     margin: 20px;
 }
+
 /*---------------------FIN DE GONZA--------------------------------*/
 @media (min-width: 320px) and (max-width: 480px) {
     body {
