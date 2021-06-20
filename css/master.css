@@ -120,16 +120,19 @@ ul{
 /*---------------VALEN-----------------------------*/
 /*detalles de canciones*/
 .imgdetalles{
-    width: 20%;
-    height: 5%;
+    width: 17%;
+    height: 18%;
 }
 .infodetallescancion{
     /*display: flexbox;*/
     align-items: center;
 }
 .infodetalles{
-    margin: 10px 0 10px 0;
-    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
     color: black;
 }
 .infodetalles a{
@@ -142,17 +145,23 @@ ul{
 /*detalles de albumes*/
 .detallesalbum{
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
 }
 .listacanciones{
     text-decoration: underline;
     background-color: #fbbe28;
 }
-.listadocanciones a{
+
+.listadocanciones ul li{
     color: black;
+    list-style: none;
 }
 .listadocanciones a:hover{
     color: #fbbe28;
+}
+.contenido{
+    display: flex;
+    margin-bottom: 20px;
 }
 /*detalles artistas*/
 .detallesartista{
