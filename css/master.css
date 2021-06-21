@@ -236,6 +236,14 @@ ul{
         font-weight: bold;
         text-decoration: underline;
      }
+.rap{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
 /*----------------------FIN DE GERO-----------------------------*/
 /*---------------------GONZA-------------------------*/
 form.buscador input[type=text] {
