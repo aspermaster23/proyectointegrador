@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/master.css">
     <title>Monkey Music</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="js/genres.js"></script>
+
 </head>
 <body>
     <main>
@@ -22,26 +24,23 @@
                     <li><a href="generos.html">Géneros</a></li>
                     <!--Buscador hecho por gonchy-->
                     <li>
-                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                        <form class="buscador" action="resultadosbusqueda.html">
-                          <input type="text" placeholder="Buscar.." name="search">
-                          <button type="submit"><i class="fa fa-search"></i></button>
+                        <form action="resultadosbusqueda.html" method="GET">
+                            <input type="search" name="buscar" placeholder="Buscar...">
+                            <button type="submit">
+                                <h2><ion-icon name="search-outline"></ion-icon></h2>
+                            </button>
                         </form> 
                     </li>
                 </ul>
                 <h2 class="fraseheader">¡El lugar donde encontraras la mejor música!</h2>  
             </nav>
         </header>
-        <section class="section-detalle">
-            <h2> Hip Hop-Rap</h2>
-            <ul class="listas">
-                
-                <li  class="canciones-en-lista" > <a href="cancionplegarias.html" target="_blank"> Plegarias-Nicki Nicole</a></li >
-                <li  class="canciones-en-lista"> <a href="cancionanimal.html" target="_blank"> Animal- María Becerra</a></li >
-                <li  class="canciones-en-lista"><a href="cancionamilado.html" target="_blank"> A mi lado- Dani</a></li >
-                <li  class="canciones-en-lista"><a href="cancionakapelinho.html" target="_blank"> Akapelinho- Akapellah</a>  </li>
-                
-            </ul>
+        <h2 class= "rap"> Hip Hop-Rap</h2>
+        <section class="artistas">
+            
+        <div id="app">
+            
+        </div>
         </section>
         <footer class="footer">
             <h2 class="textosfooter">Monkey music</h2>
@@ -66,3 +65,11 @@
     </main>
 </body>
 </html>
+<!-- <ul class="listas">
+                
+                <li  class="canciones-en-lista" > <a href="cancionplegarias.html" target="_blank"> Plegarias-Nicki Nicole</a></li >
+                <li  class="canciones-en-lista"> <a href="cancionanimal.html" target="_blank"> Animal- María Becerra</a></li >
+                <li  class="canciones-en-lista"><a href="cancionamilado.html" target="_blank"> A mi lado- Dani</a></li >
+                <li  class="canciones-en-lista"><a href="cancionakapelinho.html" target="_blank"> Akapelinho- Akapellah</a>  </li>
+                
+            </ul> -->

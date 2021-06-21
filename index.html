@@ -23,11 +23,12 @@
                     <li><a href="generos.html">Géneros</a></li>
                     <!--Buscador hecho por gonchy-->
                     <li>
-                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                        <form class="buscador" action="resultadosbusqueda.html">
-                          <input type="text" placeholder="buscar.." name="search">
-                          <button type="submit"><i class="fa fa-search"></i></button>
-                        </form> 
+                        <form action="resultadosbusqueda.html" method="GET">
+                            <input type="search" name="buscar" placeholder="Buscar...">
+                            <button type="submit">
+                                <h2><ion-icon name="search-outline"></ion-icon></h2>
+                            </button>
+                        </form>
                     </li>
                 </ul>
                 <h2 class="fraseheader">¡El lugar donde encontraras la mejor música!</h2>  
@@ -124,8 +125,7 @@
                </section>  
                <p class="textosfooter">Todos los derechos reservados &copy;</p>
         </footer>
-        <script src="js/master.js"></script>
     </main>
     <script src="js/master.js"></script>
 </body>
-</html>
+</html> 

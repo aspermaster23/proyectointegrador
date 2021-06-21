@@ -20,10 +20,11 @@
                     <li><a href="miplaylist.html">Playlist</a></li>
                     <li><a href="generos.html">Géneros</a></li>
                     <li>
-                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                        <form class="buscador" action="resultadosbusqueda.html">
-                          <input type="text" placeholder="Buscar.." name="search">
-                          <button type="submit"><i class="fa fa-search"></i></button>
+                        <form action="resultadosbusqueda.html" method="GET">
+                            <input type="search" name="buscar" placeholder="Buscar...">
+                            <button type="submit">
+                                <h2><ion-icon name="search-outline"></ion-icon></h2>
+                            </button>
                         </form> 
                     </li>
                 </ul>
