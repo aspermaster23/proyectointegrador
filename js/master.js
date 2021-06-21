@@ -9,8 +9,8 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks
 })
 .then(dataCancion =>{
     //console.log(dataCancion);
-    for(let i =0;i<5;i++){
-        canciones.innerHTML += `<article class="cancion"><a href="detallecancion.html?id=${dataCancion.data[i].id}"> <img src=${dataCancion.data[i].album.cover_big}> </a> <h2>${dataCancion.data[i].title}</h2> </article>`
+  for(let i =0;i<5;i++){
+      canciones.innerHTML += `<article class="cancion"><a href="detallecancion.html?id=${dataCancion.data[i].id}"> <img src=${dataCancion.data[i].album.cover_big}> </a> <h2>${dataCancion.data[i].title}</h2> </article>`
     }    
 })
 .catch(error=>console.log(error))
@@ -45,5 +45,18 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artist
 //----------------------------GERO--------------------------------
 
 //-----------------------------GONZA----------------------------------
-let busqueda = new URLSearchParams(location.search)
-let buscar = busqueda.get('buscar');
+//validando formulario
+let form = document.querySelector('form')
+let buscar = document.querySelector('[name=buscar]')
+
+form.addEventListener('submit', function(e){
+    e.preventDefault()
+    if(buscar.value === ''){
+        alert('El buscador no puede estar vacio')
+    }else if (buscar.value.length < 3){
+        alert('El termino buscado debe tener al menos 3 caracteres')
+
+    }else {
+        form.submit()
+    }
+})
