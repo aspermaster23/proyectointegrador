@@ -132,7 +132,7 @@ ul{
     flex-direction: column;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 17px;
+    font-size: 25px;
     color: black;
 }
 .infodetalles a{
@@ -152,9 +152,8 @@ ul{
     background-color: #fbbe28;
 }
 
-.listadocanciones ul li{
-    color: black;
-    list-style: none;
+.listadocanciones{
+    list-style-type: none;
 }
 .listadocanciones a:hover{
     color: #fbbe28;
@@ -166,6 +165,21 @@ ul{
 /*detalles artistas*/
 .detallesartista{
     display: flex;
+}
+.recomendaciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.listarecomendaciones{
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    text-decoration: underline;
+    background-color: #fbbe28;
 }
 /*--------------------FIN DE VALEN-----------------------------*/
 /*-----------------------GERO-------------------------*/
@@ -236,6 +250,14 @@ ul{
         font-weight: bold;
         text-decoration: underline;
      }
+.rap{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
 /*----------------------FIN DE GERO-----------------------------*/
 /*---------------------GONZA-------------------------*/
 form.buscador input[type=search] {
