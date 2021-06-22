@@ -154,14 +154,22 @@ ul{
 
 .listadocanciones{
     list-style-type: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 .listadocanciones a:hover{
     color: #fbbe28;
+}
+.listadoscanciones{
+    list-style-type: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 .contenido{
     display: flex;
     margin-bottom: 20px;
 }
+
 /*detalles artistas*/
 .detallesartista{
     display: flex;
@@ -178,9 +186,10 @@ ul{
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 20px;
-    text-decoration: underline;
     background-color: #fbbe28;
+    font-size: 30px;
 }
+
 /*--------------------FIN DE VALEN-----------------------------*/
 /*-----------------------GERO-------------------------*/
  /** generos.html**/
@@ -406,7 +415,6 @@ form.example::after {
     }
     .video{
         width: 90%;
-        margin-left: 5%;
     }
     /**Detalle de los albumes**/
     .detallesalbum{
