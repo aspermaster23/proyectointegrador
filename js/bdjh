@@ -1,0 +1,81 @@
+//Trabajo Local Storage -- Gonchy
+// capturamos elemento
+let agregarQuitar = document.getElementById('agregarQuitar')
+// creamos un array
+let miplaylist = [];
+
+// traemos los datos del local storage
+let traercanciones = localStorage.getItem('pepito')
+//console.log(traercanciones);
+//En las proximas lineas dice basicamente lo sgte: si los datos que traigo de "traercanciones" no son nulos, eso quiere decir que hay datos, por lo tanto, pido que se los traiga en forma de un array
+if(traercanciones != null){
+    miplaylist = JSON.parse(traercanciones) //Estoy haciendo que dentro del array "miplaylist" el cual es un Array vacio, 
+                                            //Ahora va a contener todos los datos en lo que seria el navegador a travez del local storage.
+                                            // me los trae en formato string y lo convierto en un Array
+}
+
+//verificando si el id esta o no en el Array
+if(miplaylist.includes(id)){
+    agregarQuitar.innerText = 'Quitar de mi playlist'   //si en mi playlist ya esta la cancion, le digo que me cambie el titulo "anadir a favoritos" y que aparezca "quitar de favoritos"
+}
+// controlamos el evento click sobre el elemento capturado
+//console.log(agregarQuitar);
+agregarQuitar.addEventListener('click', function(e){
+    e.preventDefault()                        // si se hace click en el "agregar a favoritos" (el cual esta dentro de la clase agregarQuitar)
+        console.log('estoy en agrgg');                                  // le pedimos que agregue el elemento a el array de miplaylist
+    if(miplaylist.includes(id)){
+        let posicionCancion = miplaylist.indexOf(id)
+        miplaylist.splice(posicionCancion,1)
+        agregarQuitar.innerText = 'Agregar a mi playlist'
+    }else{
+        miplaylist.push(id)
+        agregarQuitar.innerText = 'Quitar de mi playlist'
+    }
+    //cargamos los datos al local storage aplicandole el json.stringify a mi array
+    let cadenatexto = JSON.stringify(miplaylist)
+    localStorage.setItem('pepito',cadenatexto)
+    console.log(localStorage);
+}) 
+
+
+
+
+
+
+//Trabjando con el localStorage
+//1.- Capturar el elemento
+let agregarEliminar = document.getElementById('agregarEliminar');
+
+//2.- Crear un array
+let favoritos = [];
+
+//3.- Traer los datos del localStorage
+let traerFavoritos = localStorage.getItem('Favoritos');
+
+//console.log(traerFotos);
+if(traerFavoritos != null){
+    favoritos = JSON.parse(traerFavoritos);   
+}
+
+//4.- Verificar si el ( id ) esta o no en el array - Condición
+if(favoritos.includes(id)){
+    agregarEliminar.innerHTML = 'Eliminar de favoritos';      
+}
+
+//5.- Controlar el evento sobre el elemento capturado
+agregarEliminar.addEventListener('click', function(e){
+    e.preventDefault();
+    //Debo programar agregar el id al array de favortitos para finalmente colocarlo dentro del localStorage
+    if(favoritos.includes(id)){
+        let posicionFavoritos = favoritos.indexOf(id);
+        favoritos.splice(posicionFavoritos,1);
+        agregarEliminar.innerHTML = 'Agregar a Favoritos';
+    }else{
+        favoritos.push(id);
+        agregarEliminar.innerHTML = 'Eliminar de Favoritos'
+    }
+    //cargar los datos al localStorage
+    let cadenaTextofavoritos = JSON.stringify(favoritos);
+    localStorage.setItem('Favoritos',cadenaTextofavoritos)
+    console.log(localStorage);
+})
