@@ -91,7 +91,6 @@ ul{
 .discoalbum{
     width:15%;
 }
-
 .discosalbumes{
     display: flex;
     flex-wrap: wrap;
@@ -157,13 +156,18 @@ ul{
     margin-bottom: 5px;
     margin-top: 5px;
 }
+.listadocanciones a{
+    color: black;
+}
 .listadocanciones a:hover{
     color: #fbbe28;
 }
-.listadoscanciones{
+.topsongs{
     list-style-type: none;
     margin-bottom: 5px;
     margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .contenido{
     display: flex;
@@ -171,9 +175,6 @@ ul{
 }
 
 /*detalles artistas*/
-.detallesartista{
-    display: flex;
-}
 .recomendaciones{
     display: flex;
     flex-wrap: wrap;
@@ -189,7 +190,23 @@ ul{
     background-color: #fbbe28;
     font-size: 30px;
 }
-
+.detallesartista{
+    display: flex;
+    flex-direction:row-reverse;
+    margin-top: 20px;
+}
+.discoalbumbis{
+    transition: all .7s ease;
+    width:100%;
+}
+.discoalbumbis{
+    width:15%;
+    height: 10%;
+}
+.discoalbumbis:hover{
+    transform:scale(1.07);
+    background-color: #fbbe28;
+}
 /*--------------------FIN DE VALEN-----------------------------*/
 /*-----------------------GERO-------------------------*/
  /** generos.html**/

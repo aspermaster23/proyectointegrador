@@ -3,25 +3,7 @@ let objetoId = new URLSearchParams(location.search);
 let id =  objetoId.get('id');
 console.log(id);
 
-let listadoscanciones=document.querySelector(".listadoscanciones");
-//console.log(listadoscanciones)
-//console.log(id);
-fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/top`)
-.then(respuesta =>{
-    return respuesta.json()
-})
-.then(dataDetallesart =>{
-    //console.log(dataDetallesart)
-
-    listadoscanciones.innerHTML += `<li><h2 class="listacanciones">Mejores 5 canciones:</h2></li>`
-
-    for(let i=0;i<5;i++){
-        listadoscanciones.innerHTML += `<li><h2>${dataDetallesart.data[i].title}</h2></li>`
-    }
-})
-
-.catch(error => console.log(error));
-let infodetallesartista=document.querySelector(".infodetallesartista");
+let detallesartista=document.querySelector(".detallesartista");
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
 .then(respuesta =>{
     return respuesta.json()
@@ -29,8 +11,30 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
 .then(dataDetallesar =>{
     console.log(dataDetallesar);
 
-    infodetallesartista.innerHTML += `<h2 class="infodetalles">Artista: ${dataDetallesar.name}</h2> <article class="detallesartista"><img src=${dataDetallesar.picture_big} alt=${dataDetallesar.name} class="imgdetalles"><ul class="listadocanciones"></article>`
+    detallesartista.innerHTML += `<img src=${dataDetallesar.picture_big} alt=${dataDetallesar.name} class="imgdetalles"><h2 class="infodetalles">Artista: ${dataDetallesar.name}</h2>`
 })
+.catch(error => console.log(error));
+
+let topsongs=document.querySelector(".topsongs");
+//console.log(listadoscanciones)
+//console.log(id);
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/top`)
+.then(respuesta =>{
+    return respuesta.json()
+})
+.then(dataDetallesart =>{
+    console.log(dataDetallesart)
+
+    topsongs.innerHTML += `<li><h2 class="listacanciones">Mejores 5 canciones:</h2></li>`
+
+    for(let i =0;i<5;i++){
+        topsongs.innerHTML += `<article class="discoalbumbis"><a href="detallecancion.html?id=${dataDetallesart.data[i].id}"> <img src=${dataDetallesart.data[i].album.cover_big}> </a> <h2>${dataDetallesart.data[i].title}</h2> </article>`
+    }    
+    //for(let i=0;i<5;i++){
+    //    topsongs.innerHTML += `<li><h2>${dataDetallesart.data[i].title}</h2></li>`
+    //}
+})
+
 .catch(error => console.log(error));
 
 let recomendaciones=document.querySelector(".recomendaciones");
