@@ -91,7 +91,6 @@ ul{
 .discoalbum{
     width:15%;
 }
-
 .discosalbumes{
     display: flex;
     flex-wrap: wrap;
@@ -154,18 +153,28 @@ ul{
 
 .listadocanciones{
     list-style-type: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.listadocanciones a{
+    color: black;
 }
 .listadocanciones a:hover{
     color: #fbbe28;
+}
+.topsongs{
+    list-style-type: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .contenido{
     display: flex;
     margin-bottom: 20px;
 }
+
 /*detalles artistas*/
-.detallesartista{
-    display: flex;
-}
 .recomendaciones{
     display: flex;
     flex-wrap: wrap;
@@ -178,8 +187,33 @@ ul{
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 20px;
-    text-decoration: underline;
     background-color: #fbbe28;
+    font-size: 30px;
+}
+.detallesartista{
+    display: flex;
+    flex-direction:row-reverse;
+    margin-top: 20px;
+}
+.discoalbumbis{
+    transition: all .7s ease;
+    width:100%;
+}
+.discoalbumbis{
+    width:15%;
+    height: 10%;
+    
+}
+.discoalbumbis:hover{
+    transform:scale(1.07);
+    background-color: #fbbe28;
+}
+.topsongs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /*--------------------FIN DE VALEN-----------------------------*/
 /*-----------------------GERO-------------------------*/
@@ -439,12 +473,18 @@ form.example::after {
     }
     /**Detalle de las canciones**/
     .imgdetalles{
-        width: 90%;
-        margin-left: 5%;
+        width: 60%;
+        margin-left: 20%;
     }
     .video{
-        width: 90%;
-        margin-left: 5%;
+        width: 100%;
+    }
+    .infodetalles{
+        font-size: 20px;
+    }
+    .contenido{
+        display: flex;
+        flex-direction: column;
     }
     /**Detalle de los albumes**/
     .detallesalbum{
@@ -455,5 +495,14 @@ form.example::after {
     .detallesartista{
         flex-direction: column;
         margin-right: 5%;
+    }
+    .topsongs{
+        flex-direction: column;
+    }
+    .recomendaciones{
+        margin-bottom: 10px;
+    }
+    .listarecomendaciones{
+        margin-bottom: -20px;
     }
 }
