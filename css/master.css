@@ -91,7 +91,6 @@ ul{
 .discoalbum{
     width:15%;
 }
-
 .discosalbumes{
     display: flex;
     flex-wrap: wrap;
@@ -157,13 +156,18 @@ ul{
     margin-bottom: 5px;
     margin-top: 5px;
 }
+.listadocanciones a{
+    color: black;
+}
 .listadocanciones a:hover{
     color: #fbbe28;
 }
-.listadoscanciones{
+.topsongs{
     list-style-type: none;
     margin-bottom: 5px;
     margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .contenido{
     display: flex;
@@ -171,9 +175,6 @@ ul{
 }
 
 /*detalles artistas*/
-.detallesartista{
-    display: flex;
-}
 .recomendaciones{
     display: flex;
     flex-wrap: wrap;
@@ -189,7 +190,31 @@ ul{
     background-color: #fbbe28;
     font-size: 30px;
 }
-
+.detallesartista{
+    display: flex;
+    flex-direction:row-reverse;
+    margin-top: 20px;
+}
+.discoalbumbis{
+    transition: all .7s ease;
+    width:100%;
+}
+.discoalbumbis{
+    width:15%;
+    height: 10%;
+    
+}
+.discoalbumbis:hover{
+    transform:scale(1.07);
+    background-color: #fbbe28;
+}
+.topsongs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 /*--------------------FIN DE VALEN-----------------------------*/
 /*-----------------------GERO-------------------------*/
  /** generos.html**/
@@ -199,7 +224,13 @@ ul{
  }
  img {
      height: 20rem;
+     width:100%;
+    transition: all .7s ease;
  }
+ .img:hover{
+    transform:scale(1.07);
+    background-color: #fbbe28;
+}
  .titulo-generos{
      margin-top: 3%;
  }
@@ -259,14 +290,46 @@ ul{
         font-weight: bold;
         text-decoration: underline;
      }
-.rap{
+.nombreDelGenero{
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    
+}
+.generojs{
+    width:100%;
+    transition: all .7s ease;
+    flex-direction: column;
+}
+.generojs:hover{
+    transform:scale(1.07);
+    background-color: #fbbe28;
+}
+.generojs{
+    width:15%;
+}
+.generoscss{
+    width:100%;
+    transition: all .7s ease;
+    justify-content: space-between;
+    
+}
+.generoscss:hover{
+    transform:scale(1.07);
+    background-color: #fbbe28;
+}
+.generoscss{
+    width:15%;
+}
+.generoscss{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
+
+
 /*----------------------FIN DE GERO-----------------------------*/
 /*---------------------GONZA-------------------------*/
 form.buscador input[type=search] {
@@ -410,11 +473,18 @@ form.example::after {
     }
     /**Detalle de las canciones**/
     .imgdetalles{
-        width: 90%;
-        margin-left: 5%;
+        width: 60%;
+        margin-left: 20%;
     }
     .video{
-        width: 90%;
+        width: 100%;
+    }
+    .infodetalles{
+        font-size: 20px;
+    }
+    .contenido{
+        display: flex;
+        flex-direction: column;
     }
     /**Detalle de los albumes**/
     .detallesalbum{
@@ -425,5 +495,14 @@ form.example::after {
     .detallesartista{
         flex-direction: column;
         margin-right: 5%;
+    }
+    .topsongs{
+        flex-direction: column;
+    }
+    .recomendaciones{
+        margin-bottom: 10px;
+    }
+    .listarecomendaciones{
+        margin-bottom: -20px;
     }
 }
