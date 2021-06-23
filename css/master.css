@@ -190,7 +190,13 @@ ul{
  }
  img {
      height: 20rem;
+     width:100%;
+    transition: all .7s ease;
  }
+ .img:hover{
+    transform:scale(1.07);
+    background-color: #fbbe28;
+}
  .titulo-generos{
      margin-top: 3%;
  }
@@ -250,14 +256,46 @@ ul{
         font-weight: bold;
         text-decoration: underline;
      }
-.rap{
+.nombreDelGenero{
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    
+}
+.generojs{
+    width:100%;
+    transition: all .7s ease;
+    flex-direction: column;
+}
+.generojs:hover{
+    transform:scale(1.07);
+    background-color: #fbbe28;
+}
+.generojs{
+    width:15%;
+}
+.generoscss{
+    width:100%;
+    transition: all .7s ease;
+    justify-content: space-between;
+    
+}
+.generoscss:hover{
+    transform:scale(1.07);
+    background-color: #fbbe28;
+}
+.generoscss{
+    width:15%;
+}
+.generoscss{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
+
+
 /*----------------------FIN DE GERO-----------------------------*/
 /*---------------------GONZA-------------------------*/
 form.buscador input[type=search] {
