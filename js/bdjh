@@ -1,36 +1,4 @@
-let objetoId = new URLSearchParams(location.search);
-let id =  objetoId.get('id');
-console.log(id);
-
-//Detalles Cancion
-let infodetallescancion=document.querySelector(".infodetallescancion");
-fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
-.then(respuesta =>{
-    return respuesta.json()
-})
-.then(dataDetallesc =>{
-    //console.log(dataDetallesc);
-    infodetallescancion.innerHTML += `
-    <article class="infodetalles">
-        <h2>Cancion: ${dataDetallesc.title}</h2>
-    </article> 
-    <article class="infodetalles">  
-        <h2>Artista: ${dataDetallesc.artist.name}</h2> 
-    </article> 
-    <article class="infodetalles"> 
-        <h2>Album: ${dataDetallesc.album.title}</h2> 
-    </article> 
-    <article class="contenido">
-     <img src=${dataDetallesc.album.cover_big} alt=${dataDetallesc.album.title} class="imgdetalles">
-     <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}?tracklist=false" width="100%" height="260px" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write" class="video"></iframe> 
-    </article> `
-    
-})
-.catch(error => console.log(error));
-
-
-
-/*//Trabajo Local Storage -- Gonchy
+//Trabajo Local Storage -- Gonchy
 // capturamos elemento
 let agregarQuitar = document.getElementById('agregarQuitar')
 // creamos un array
@@ -67,4 +35,47 @@ agregarQuitar.addEventListener('click', function(e){
     let cadenatexto = JSON.stringify(miplaylist)
     localStorage.setItem('pepito',cadenatexto)
     console.log(localStorage);
-}) */
+}) 
+
+
+
+
+
+
+//Trabjando con el localStorage
+//1.- Capturar el elemento
+let agregarEliminar = document.getElementById('agregarEliminar');
+
+//2.- Crear un array
+let favoritos = [];
+
+//3.- Traer los datos del localStorage
+let traerFavoritos = localStorage.getItem('Favoritos');
+
+//console.log(traerFotos);
+if(traerFavoritos != null){
+    favoritos = JSON.parse(traerFavoritos);   
+}
+
+//4.- Verificar si el ( id ) esta o no en el array - Condición
+if(favoritos.includes(id)){
+    agregarEliminar.innerHTML = 'Eliminar de favoritos';      
+}
+
+//5.- Controlar el evento sobre el elemento capturado
+agregarEliminar.addEventListener('click', function(e){
+    e.preventDefault();
+    //Debo programar agregar el id al array de favortitos para finalmente colocarlo dentro del localStorage
+    if(favoritos.includes(id)){
+        let posicionFavoritos = favoritos.indexOf(id);
+        favoritos.splice(posicionFavoritos,1);
+        agregarEliminar.innerHTML = 'Agregar a Favoritos';
+    }else{
+        favoritos.push(id);
+        agregarEliminar.innerHTML = 'Eliminar de Favoritos'
+    }
+    //cargar los datos al localStorage
+    let cadenaTextofavoritos = JSON.stringify(favoritos);
+    localStorage.setItem('Favoritos',cadenaTextofavoritos)
+    console.log(localStorage);
+})
