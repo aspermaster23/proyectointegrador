@@ -21,10 +21,12 @@ let nombreDelGenero= document.querySelector(".nombreDelGenero");
 // Estructura de Fetch para traer los datos del nombre correspondiente al genero 
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}`)
     .then(respuesta=>{
+        console.log(respuesta);// ← Paso la respuesta por consola para corroborar su estado
         return respuesta.json()
+        
     })
     .then(dataNombreGenero=>{
-        console.log(dataNombreGenero)
+        console.log(dataNombreGenero)// ← Paso la respuesta por consola para corroborar su estado
         nombreDelGenero.innerHTML=` Artistas de: ${dataNombreGenero.name}` // ←← agrego el nombre del genero en el subtitulo
     })
 
@@ -33,13 +35,15 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}`)
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/artists`)
 
 .then(respuesta =>{
+    console.log(respuesta);
     return respuesta.json()
+    
 })
 .then(dataRap =>{
     console.log(dataRap)
     for(let i =0;i<24;i++){
             // Agrego la info de los artistas en la clase artista (del section)
-        artistas.innerHTML += `<article class="artista">
+        artistas.innerHTML += `<article class="generoscss">
         <a href="detalleartista.html?id=${dataRap.data[i].id}">
          <img src=${dataRap.data[i].picture_big}>
           </a>

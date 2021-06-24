@@ -297,22 +297,12 @@ ul{
     font-weight: bold;
     
 }
-.generojs{
-    width:100%;
-    transition: all .7s ease;
-    flex-direction: column;
-}
-.generojs:hover{
-    transform:scale(1.07);
-    background-color: #fbbe28;
-}
-.generojs{
-    width:15%;
-}
+
 .generoscss{
     width:100%;
     transition: all .7s ease;
     justify-content: space-between;
+    margin-bottom: 1rem;
     
 }
 .generoscss:hover{
