@@ -332,7 +332,7 @@ ul{
 
 /*----------------------FIN DE GERO-----------------------------*/
 /*---------------------GONZA-------------------------*/
-form.buscador input[type=search] {
+input[type=search] {
     padding: 5px;
     font-size: 15px;
     border: 1px solid black;
@@ -340,17 +340,10 @@ form.buscador input[type=search] {
     width: 80%;
     background: #fbbe28;
   }
-form.buscador button{
+button{
     background-color: #fbbe28;
-    width: 15%;
-    padding: 5px;
     border-color: #fbbe28;
 }
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 .titulogonchy{
     margin-top: 2%;
     text-align: center;
@@ -360,6 +353,40 @@ form.example::after {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px 0 20px 0
+}
+/* CSS aplicado para el Javascript */
+.contenidoResultados{
+    font-size: 30px;
+    font-family: roboto; 
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.titulosCanciones a{
+    color: #fbbe28;
+    text-decoration: none;
+}
+.titulosCanciones a:hover{
+    color: black;
+}
+.resultadoPlaylist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgplaylist{
+    width: 30%;
+    margin-top: 3%;
+    text-align: center;
+    color: #fbbe28;
+}
+.data{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #fbbe28;
 }
 .seccionesresultados{
     display: flex;
