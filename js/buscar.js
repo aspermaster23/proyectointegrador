@@ -5,10 +5,7 @@ let contenido = ''
 let titulo = document.querySelector('.titulogonchy')
 
 titulo.innerHTML += buscar
-titulo.classList.add('tituloBusqueda')
-
-
-
+//titulo.classList.add('tituloBusqueda')
 
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${buscar}`)
 .then(respuesta =>{

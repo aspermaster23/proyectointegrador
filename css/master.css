@@ -316,6 +316,7 @@ ul{
 
 
 /*----------------------FIN DE GERO-----------------------------*/
+
 /*---------------------GONZA-------------------------*/
 input[type=search] {
     padding: 5px;
@@ -332,12 +333,6 @@ button{
 .titulogonchy{
     margin-top: 2%;
     text-align: center;
-}
-.subtitulosbusqueda{
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px 0 20px 0
 }
 /* CSS aplicado para el Javascript */
 .contenidoResultados{
@@ -361,18 +356,12 @@ button{
     align-items: center;
 }
 .imgplaylist{
-    width: 30%;
+    width: 20%;
     margin-top: 3%;
     text-align: center;
     color: #fbbe28;
 }
-.data{
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    color: #fbbe28;
-}
+/*---------------------------*/
 .seccionesresultados{
     display: flex;
     flex-wrap: wrap;
@@ -408,11 +397,6 @@ button{
     top: 70%;
     left: 30%;
     transform: translate(-50%, -50%);
-}
-.cancionesplaylist{
-    width:15%;
-    overflow:hidden;
-    margin: 20px;
 }
 
 /*---------------------FIN DE GONZA--------------------------------*/
