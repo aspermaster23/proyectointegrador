@@ -2,21 +2,15 @@
 window.addEventListener ('load', function () {
     
 let generos= document.querySelector(".artistas")
-
 //  Guardo el endpoint de generos (deezer) en una variable
 const apiGeneros= "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"
 
-
-// Selecciono la clase generos y la guardo en una variable↓
- 
+// estructura  fetch
 fetch(apiGeneros)
 .then(respuesta =>{
-    console.log(respuesta); // ← Paso la respuesta por consola para corroborar su estado
     return respuesta.json()
 })
 .then(dataGeneros =>{  
-    console.log(dataGeneros);
-    //console.log(dataGeneros);
     for(let  i =1;i<25;i++){
         generos.innerHTML +=`<article class="generoscss">
         <a href="detalle-generos.html?id=${dataGeneros.data[i].id}">  
@@ -27,6 +21,7 @@ fetch(apiGeneros)
     }    
 })
 .catch(error=>console.log(error))
+
 })
 
 
