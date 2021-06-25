@@ -221,7 +221,13 @@ ul{
  }
  img {
      height: 20rem;
+     width:100%;
+    transition: all .7s ease;
  }
+ .img:hover{
+    transform:scale(1.07);
+    background-color: #fbbe28;
+}
  .titulo-generos{
      margin-top: 3%;
  }
@@ -281,17 +287,35 @@ ul{
         font-weight: bold;
         text-decoration: underline;
      }
-.rap{
+.nombreDelGenero{
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    
 }
+
+.generoscss{
+    width:100%;
+    transition: all .7s ease;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    
+}
+.generoscss:hover{
+    transform:scale(1.07);
+    background-color: #fbbe28;
+}
+.generoscss{
+    width:15%;
+}
+
+
+
 /*----------------------FIN DE GERO-----------------------------*/
+
 /*---------------------GONZA-------------------------*/
-form.buscador input[type=search] {
+input[type=search] {
     padding: 5px;
     font-size: 15px;
     border: 1px solid black;
@@ -299,27 +323,42 @@ form.buscador input[type=search] {
     width: 80%;
     background: #fbbe28;
   }
-form.buscador button{
+button{
     background-color: #fbbe28;
-    width: 15%;
-    padding: 5px;
     border-color: #fbbe28;
 }
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 .titulogonchy{
     margin-top: 2%;
     text-align: center;
 }
-.subtitulosbusqueda{
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px 0 20px 0
+/* CSS aplicado para el Javascript */
+.contenidoResultados{
+    font-size: 30px;
+    font-family: roboto; 
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+.titulosCanciones a{
+    color: #fbbe28;
+    text-decoration: none;
+}
+.titulosCanciones a:hover{
+    color: black;
+}
+.resultadoPlaylist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgplaylist{
+    width: 20%;
+    margin-top: 3%;
+    text-align: center;
+    color: #fbbe28;
+}
+/*---------------------------*/
 .seccionesresultados{
     display: flex;
     flex-wrap: wrap;
@@ -355,11 +394,6 @@ form.example::after {
     top: 70%;
     left: 30%;
     transform: translate(-50%, -50%);
-}
-.cancionesplaylist{
-    width:15%;
-    overflow:hidden;
-    margin: 20px;
 }
 
 /*---------------------FIN DE GONZA--------------------------------*/

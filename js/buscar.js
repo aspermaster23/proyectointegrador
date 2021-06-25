@@ -2,13 +2,10 @@ let busqueda = new URLSearchParams(location.search) /* CAPTURO New URLSearchPara
 let buscar = busqueda.get('buscar') /* OBTENGO EL DATO Extraigo lo que el usuario typeo*/
 let resultados = document.querySelector('.resultados')
 let contenido = ''
-let titulo = document.querySelector('.titulo')
+let titulo = document.querySelector('.titulogonchy')
 
 titulo.innerHTML += buscar
-titulo.classList.add('tituloBusqueda')
-
-
-
+//titulo.classList.add('tituloBusqueda')
 
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${buscar}`)
 .then(respuesta =>{
@@ -17,7 +14,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${bus
 .then(dataBusqueda =>{ /*en dataBusqueda estan los datos*/
    console.log(dataBusqueda);
    for(let i=0; i < dataBusqueda.data.length; i++){
-       contenido += `<article class="contenido2">
+       contenido += `<article class="contenidoResultados">
                         <p class="titulosCanciones"><a href="detallecancion.html?id=${dataBusqueda.data[i].id}"> ${dataBusqueda.data[i].title} </a></p>
                     </article>`
    }
@@ -30,5 +27,3 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${bus
 .catch(error =>{
    console.log(error);
 })
-
-console.log(dataBusqueda);
