@@ -149,6 +149,7 @@ ul{
 .listacanciones{
     text-decoration: underline;
     background-color: #fbbe28;
+    display: inline;
 }
 
 .listadocanciones{
@@ -192,7 +193,7 @@ ul{
 }
 .detallesartista{
     display: flex;
-    flex-direction:row-reverse;
+    /*flex-direction:row-reverse;*/
     margin-top: 20px;
 }
 .discoalbumbis{
@@ -202,18 +203,14 @@ ul{
 .discoalbumbis{
     width:15%;
     height: 10%;
-    
+    margin-right: 10px;
 }
 .discoalbumbis:hover{
     transform:scale(1.07);
     background-color: #fbbe28;
 }
-.topsongs{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.listadetart{
+    list-style-type: none;
 }
 /*--------------------FIN DE VALEN-----------------------------*/
 /*-----------------------GERO-------------------------*/
@@ -436,13 +433,13 @@ form.example::after {
     /**Detalle de las canciones**/
     .imgdetalles{
         width: 60%;
-        margin-left: 20%;
+        /*margin-left: 20%;*/
     }
     .video{
         width: 100%;
     }
     .infodetalles{
-        font-size: 20px;
+        font-size: 18px;
     }
     .contenido{
         display: flex;
@@ -455,16 +452,31 @@ form.example::after {
     }
     /**Detalles artistas**/
     .detallesartista{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
         flex-direction: column;
-        margin-right: 5%;
-    }
-    .topsongs{
-        flex-direction: column;
+        justify-content: center;
+        margin-left:90px;
     }
     .recomendaciones{
         margin-bottom: 10px;
     }
     .listarecomendaciones{
         margin-bottom: -20px;
+    }
+    .listadetart{
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    .discoalbumbis{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .imgdetalless{
+        width: 400%;
+        height: 100%;
     }
 }

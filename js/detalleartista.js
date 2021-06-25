@@ -11,29 +11,28 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
 .then(dataDetallesar =>{
     console.log(dataDetallesar);
 
-    detallesartista.innerHTML += `<img src=${dataDetallesar.picture_big} alt=${dataDetallesar.name} class="imgdetalles"><h2 class="infodetalles">Artista: ${dataDetallesar.name}</h2>`
+    detallesartista.innerHTML += `<h2 class="infodetalles">Artista: ${dataDetallesar.name}</h2> <img src=${dataDetallesar.picture_big} alt=${dataDetallesar.name} class="imgdetalles">`
 })
 .catch(error => console.log(error));
 
-let topsongs=document.querySelector(".topsongs");
 //console.log(listadoscanciones)
 //console.log(id);
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/top`)
 .then(respuesta =>{
     return respuesta.json()
 })
-.then(dataDetallesart =>{
-    console.log(dataDetallesart)
+.then(topdata =>{
+    console.log(topdata)
 
-    topsongs.innerHTML += `<li><h2 class="listacanciones">Mejores 5 canciones:</h2></li>`
+    detallesartista.innerHTML += `<li class="listadetart"><h2 class="listacanciones">Mejores 5 canciones:</h2></li>`
 
     for(let i =0;i<5;i++){
-        topsongs.innerHTML += `<article class="discoalbumbis"><a href="detallecancion.html?id=${dataDetallesart.data[i].id}"> <img src=${dataDetallesart.data[i].album.cover_big}> </a> <h2>${dataDetallesart.data[i].title}</h2> </article>`
+        detallesartista.innerHTML += `<article class="discoalbumbis"><a href="detallecancion.html?id=${topdata.data[i].id}"> <img src=${topdata.data[i].album.cover_big} class="imgdetalless"> </a> <h2>${topdata.data[i].title}</h2> </article>`
     }    
-    //for(let i=0;i<5;i++){
-    //    topsongs.innerHTML += `<li><h2>${dataDetallesart.data[i].title}</h2></li>`
-    //}
+    
 })
+
+
 
 .catch(error => console.log(error));
 
