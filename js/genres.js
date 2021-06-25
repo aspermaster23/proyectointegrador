@@ -1,24 +1,21 @@
-// Creo un evento para que el navegador complete la carga antes de ejcutar las funciones
+// Creo un evento para que el navegador complete la carga antes de ejcutar las funciones.
 window.addEventListener ('load', function () {
 
 
 
 console.log(location);
-    
+    // Guardo la "querystring" como objeto.
 let objetoId = new URLSearchParams(window.location.search);
-// Guardo el valor en una variable
+// Guardo el valor en una variable.
 const id =  objetoId.get('id');
 
-   console.log(id); // lo paso por consola para chequear hhaberlo traído con exito
-//    console.log('probando link'); 
+   console.log(id); // lo paso por consola para chequear haberlo traído con exito.
 
-
-
-// declaro variables para las clases a las que me estare refiriendo
+// declaro variables para las clases a las que me estare refiriendo.
 let artistas=document.querySelector(".artistas");
 let nombreDelGenero= document.querySelector(".nombreDelGenero");
 
-// Estructura de Fetch para traer los datos del nombre correspondiente al genero 
+// Estructura de Fetch para traer los datos del nombre correspondiente al genero.
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}`)
     .then(respuesta=>{
         console.log(respuesta);// ← Paso la respuesta por consola para corroborar su estado
