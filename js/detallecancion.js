@@ -16,10 +16,10 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
         <h2>Cancion: ${dataDetallesc.title}</h2>
     </article>
     <article class="infodetalles">
-        <h2>Artista: ${dataDetallesc.artist.name}</h2>
+        <h2>Artista: <a href="detalleartista.html?id=${dataDetallesc.artist.id}">${dataDetallesc.artist.name}</a></h2>
     </article> 
     <article class="infodetalles"> 
-        <h2>Album: ${dataDetallesc.album.title}</h2>
+        <h2>Album: <a href="detallealbum.html?id=${dataDetallesc.album.id}">${dataDetallesc.album.title}</a></h2>
     </article> 
     <article class="contenido">
     <img src="${dataDetallesc.album.cover_big}" alt=${dataDetallesc.album.title} class="imgdetalles"> 
