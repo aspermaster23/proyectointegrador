@@ -45,13 +45,19 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artist
 //----------------------------GERO--------------------------------
 
 //-----------------------------GONZA----------------------------------
-//validando formulario
-let form = document.querySelector('form')
-let buscar = document.querySelector('[name=buscar]')
 
-form.addEventListener('submit', function(e){
-    e.preventDefault()
-    if(buscar.value === ''){
+//validando formulario de busqueda 
+
+let form = document.querySelector('form')    //capturo el formulario de busqueda con una variable 
+let buscar = document.querySelector('[name=buscar]')   // capturo el campo name del formulario en el html
+
+form.addEventListener('submit', function(e){    // creo un evento
+                                                // las cuales son: que no escriba nada: salte una alerta que diga que ...
+                                                // si el largo, es decir el length de lo que se manda a buscar es menor a 3 digitos, que salte otra alerta que diga ..
+                                                // Por ultimo, si lo que escribio el usuario  cumple esos requisitos, que se haga la funcion submit.
+
+    e.preventDefault() //cancela el evento de la etiqueta - es decir - evita que la etiqueta haga lo que hace por defecto
+    if(buscar.value === ''){                            
         alert('El buscador no puede estar vacio')
     }else if (buscar.value.length < 3){
         alert('El termino buscado debe tener al menos 3 caracteres')

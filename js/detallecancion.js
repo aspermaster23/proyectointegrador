@@ -25,12 +25,8 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
     <img src="${dataDetallesc.album.cover_big}" alt=${dataDetallesc.album.title} class="imgdetalles"> 
     <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}?tracklist=false" width="100%" height="260px" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write" class="video"></iframe>
     </article> `
-  
 })
 .catch(error => console.log(error));
-
-
-
 //Trabajo Local Storage -- Gonchy
 // capturamos elemento
 let agregarQuitar = document.getElementById('agregarQuitar')
